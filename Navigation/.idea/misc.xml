@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/avida/pmdm/android-fragments/Navigation/app/src/main/res/layout/activity_main.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/avida/pmdm/android-fragments/Navigation/app/src/main/res/layout/fragment_blue.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/avida/pmdm/android-fragments/Navigation/app/src/main/res/layout/fragment_red.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/avida/pmdm/navigation/Navigation/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/avida/pmdm/navigation/Navigation/app/src/main/res/layout/fragment_blue.xml" value="0.34601449275362317" />
+        <entry key="..\:/Users/avida/pmdm/navigation/Navigation/app/src/main/res/layout/fragment_red.xml" value="0.34601449275362317" />
+        <entry key="..\:/Users/avida/pmdm/navigation/Navigation/app/src/main/res/menu/menu1.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="15" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

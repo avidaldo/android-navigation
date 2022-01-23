@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <!-- tools:showIn="navigation_view" permite visualizar el menú en la vista del  drawer -->
+
+
+    <!-- Los id de aquellos items que referencien destinos del
+    navigation graph (mobile_navigation.xml) deben ser iguales
+    a los de los fragments destino indicados en éste -->
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dest1"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Destino 1" />
+        <item
+            android:id="@+id/nav_dest2"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Destino 2" />
+        <item
+            android:id="@+id/nav_dest3"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Destino 3" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/submenu"
+            android:title="Subtitulo">
+            <menu>
+                <item
+                    android:id="@+id/subitem1"
+                    android:icon="@android:drawable/ic_menu_manage"
+                    android:title="Subitem 1" />
+            </menu>
+        </item>
+
+    </group>
+</menu>
