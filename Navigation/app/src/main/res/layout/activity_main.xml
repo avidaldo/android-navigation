@@ -7,6 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <!-- NavHostFragment: Contenedor de fragments. Aquí se cargarán
+    los distintos fragments siguiendo la navegación. -->
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/navHostFragment"
         android:layout_width="409dp"
@@ -20,7 +24,17 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph" />
 
-    /* navGraph referencia el xml donde se definirá la navegación que permite este contenedor */
+    <!-- En el Design aparecen por separado FragmentContainerView y NavHostFragment. Eligiendo esta
+    última se agregan los atributos que particularizan el FragmentContainerView en un NavHostFragment:
+
+    android:name contiene la clase que implementa NavHost (es lo que convierte este
+        FragmentContainerView en un NavHostFragment). También podría cargarse directamente un fragment.
+    app:navGraph asocia el NavHostFragment con un gráfico de navegación.
+        El gráfico de navegación especifica todos los destinos a los que se podrá navegar dentro
+        de este NavHost
+    app:defaultNavHost="true" se encarga de que este NavHostFragment intercepte el botón "atrás"
+        del sistema (cargará en este NavHost el resultado de navegar utilizando este botón) -->
+
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
 
-        /* Para recuperar el navControler de un FragmentContainerView desde la activity que lo contiene: */
+        /* Para recuperar el navControler de un NavHostFragment(FragmentContainerView) desde la activity que lo contiene: */
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
         val navController = navHostFragment.navController
 

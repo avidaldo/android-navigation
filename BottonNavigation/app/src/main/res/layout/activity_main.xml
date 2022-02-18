@@ -18,6 +18,11 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
+
+    <!-- La siguiente vista es un NavHostFragment, en el Design aparecen
+    por separado FragmentContainerView y NavHostFragment. Eligiendo esta
+    última se agregan los atributos necesarios -->
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment_activity_main"
         android:layout_width="match_parent"
