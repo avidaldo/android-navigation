@@ -36,7 +36,7 @@ class BlueFragment : Fragment() {
 
         binding.button.setOnClickListener {
             //Toast.makeText(activity, "click en azul", Toast.LENGTH_SHORT).show()
-            navController.navigate(R.id.action_blueFragment_to_redFragment)
+            navController.navigate(BlueFragmentDirections.actionBlueFragmentToRedFragment())
             /* El navControler nos permite utilizar las acciones de navegación definidas en el nav_graph */
         }
     }

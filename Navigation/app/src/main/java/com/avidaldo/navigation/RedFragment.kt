@@ -30,7 +30,7 @@ class RedFragment : Fragment() {
         val navController = findNavController()
 
         binding.button.setOnClickListener {
-            navController.navigate(R.id.action_redFragment_to_blueFragment)
+            navController.navigate(RedFragmentDirections.actionRedFragmentToBlueFragment())
         }
     }
 

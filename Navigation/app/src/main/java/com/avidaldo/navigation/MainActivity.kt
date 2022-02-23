@@ -32,7 +32,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnChangeFromActivity.setOnClickListener {
             when (navController.currentDestination?.id) {
                 R.id.blueFragment1 -> navController.navigate(R.id.action_blueFragment_to_redFragment)
-                R.id.redFragment2 -> navController.navigate(R.id.action_redFragment_to_blueFragment)
+                // Referenciando la acción de navegación con safe-args (recomendado; require dependencias -ver build.gradle-):
+                R.id.redFragment2 -> navController.navigate(RedFragmentDirections.actionRedFragmentToBlueFragment())
                 else -> throw Exception("No hay acción definida desde el fragment actual")
             }
         }
