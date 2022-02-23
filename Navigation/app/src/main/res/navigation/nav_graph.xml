@@ -14,6 +14,7 @@
             android:id="@+id/action_blueFragment_to_redFragment"
             app:destination="@id/redFragment2" />
     </fragment>
+
     <fragment
         android:id="@+id/redFragment2"
         android:name="com.avidaldo.navigation.RedFragment"
@@ -22,5 +23,12 @@
         <action
             android:id="@+id/action_redFragment_to_blueFragment"
             app:destination="@id/blueFragment1" />
+
+        <!-- redFragment tiene un argumento que puede recibir -->
+        <argument
+            android:name="argument_to_red"
+            app:argType="integer"
+            android:defaultValue="42" />
     </fragment>
+
 </navigation>
