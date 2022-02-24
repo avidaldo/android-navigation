@@ -42,13 +42,16 @@ class BlueFragment : Fragment() {
             /* El navControler nos permite utilizar las acciones de navegación definidas en el nav_graph */
             //navController.navigate(BlueFragmentDirections.actionBlueFragmentToRedFragment())
 
+            val numero = binding.editTextNumber.text.toString().toInt()
+            //binding.editTextNumber.text.toString().toIntOrNull()?.let { action.argumentToRed = it }
+
 
             /** Para pasar datos utilizando safe-args (requiere dependencia en build.gradle)
              * https://developer.android.com/guide/navigation/navigation-pass-data#Safe-args */
             // Recogemos la acción que queremos de las especificadas en el nav_graph
-            val action = BlueFragmentDirections.actionBlueFragmentToRedFragment()
+            val action = BlueFragmentDirections.actionBlueFragmentToRedFragment(numero)
             // Le añadimos el argumento definido para el fragment de destino
-            binding.editTextNumber.text.toString().toIntOrNull()?.let { action.argumentToRed = it }
+
             // Navegamos siguiendo esa acción con ese argumento
             navController.navigate(action)
 
