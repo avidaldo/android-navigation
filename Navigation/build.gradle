@@ -6,12 +6,11 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.1.2'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
 
         /** Dependencia para utilizar safe-args
          * https://developer.android.com/guide/navigation/navigation-pass-data#Safe-args */
-        def nav_version = "2.4.1"
-        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.4.1'
     }
 }
 
